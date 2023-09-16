@@ -22,11 +22,9 @@
       --font: 'Montserrat Alternates', sans-serif;
       --white: #fff;
       --black: #1c1717;
-      --first: #65005e;
-      --second: #3c84ce;
-      --third: #30eee2;
-      --fourth: #ff1919;
-      --border: #d9d9d9;
+      --first: #ffffff;
+      --second: #0039a6;
+      --third: #d52b1e;
       --transparent: #ffffff4d;
     }
 
@@ -67,9 +65,9 @@
     }
 
     .container {
-      max-width: 1920px;
+      max-width: 1840px;
       height: 100%;
-      padding: 60px 60px 15em;
+      padding: 60px 20px 15em;
       margin: auto;
       position: relative;
       z-index: 2;
@@ -305,7 +303,7 @@
                   var(--first) 3%,
                   var(--second) 38%,
                   var(--third) 68%,
-                  var(--fourth) 98%);
+                  var(--third) 98%);
       background-size: 400% 400%;
       background-attachment: fixed;
       -webkit-animation: gradient 15s ease infinite;
@@ -482,16 +480,12 @@
       background-color: var(--third);
     }
 
-    .fourth__btn span:nth-child(2) {
-      background-color: var(--fourth);
-    }
-
     .all__btn span:nth-child(2) {
       background: linear-gradient(315deg,
                   var(--first) 3%,
                   var(--second) 38%,
                   var(--third) 68%,
-                  var(--fourth) 98%);
+                  var(--third) 98%);
     }
 
     .btn:hover span:nth-child(2) {
@@ -1490,12 +1484,6 @@
             </span>
             <span></span>
           </button>
-          <button class="btn fourth__btn">
-            <span>
-              Change fourth color
-            </span>
-            <span></span>
-          </button>
           <button class="btn all__btn">
             <span>
               Change all colors
@@ -1644,19 +1632,11 @@
     thirdbtn.addEventListener("click", function(e){
       document.body.style.setProperty('--third', `${getRandomColor()}`);
     });
-    fourthbtn.addEventListener("click", function(e){
-      document.body.style.setProperty('--fourth', `${getRandomColor()}`);
-    });
     allbtn.addEventListener("click", function(e){
       document.body.style.setProperty('--first', `${getRandomColor()}`);
       document.body.style.setProperty('--second', `${getRandomColor()}`);
       document.body.style.setProperty('--third', `${getRandomColor()}`);
-      document.body.style.setProperty('--fourth', `${getRandomColor()}`);
     });
-    document.body.style.setProperty('--first', `${getRandomColor()}`);
-    document.body.style.setProperty('--second', `${getRandomColor()}`);
-    document.body.style.setProperty('--third', `${getRandomColor()}`);
-    document.body.style.setProperty('--fourth', `${getRandomColor()}`);
     // end random
     
 
